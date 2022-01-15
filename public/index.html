@@ -1,0 +1,21 @@
+<script>
+    function doit() {
+        alert('asfdafds');
+        document.querySelector('#data').innerHTML = 'asdfsda';
+    }
+    xhr = new XMLHttpRequest();
+    xhr.url = 'https://jsonplaceholder.typicode.com/albums';
+    xhr.method = 'GET';
+    xhr.open('GET', 'https://jsonplaceholder.typicode.com/albums',);
+    xhr.send();
+    xhr.onStatusChangeEvent = doit;
+    fetch('http://localhost:1011/post', { a: 23432 }).then(x => {
+        console.log(x);
+        console.log(x.json().then(y => console.log(y)));
+    });
+
+</script>
+
+<div id="data">
+
+</div>
